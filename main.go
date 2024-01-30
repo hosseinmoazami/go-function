@@ -18,4 +18,13 @@ func main() {
 	} else {
 		fmt.Printf("54 / 8 = %f\n", res)
 	}
+
+	sv := simpleMath.NewSemanticVersion(1, 2, 3)
+	fmt.Println(sv.String())
+	sv.IncrementMajor()
+	sv.IncrementMajor()
+	sv.IncrementMinor()
+	sv.IncrementPatch()
+	fmt.Println(sv.String())
+
 }
